@@ -1,0 +1,99 @@
+r-cran-crayon (1.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.4.2
+  * Run cme, dh-update-R
+
+ -- Nilesh Patra <nilesh@debian.org>  Mon, 01 Nov 2021 21:44:39 +0530
+
+r-cran-crayon (1.4.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dh-r.
+  * watch file standard 4 (routine-update)
+
+ -- Andreas Tille <tille@debian.org>  Tue, 17 Aug 2021 08:56:32 +0200
+
+r-cran-crayon (1.4.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.5.1 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Testsuite: autopkgtest-pkg-r (routine-update)
+  * No need to manually deal with PNG files
+
+ -- Andreas Tille <tille@debian.org>  Thu, 04 Feb 2021 17:12:40 +0100
+
+r-cran-crayon (1.3.4-5) unstable; urgency=medium
+
+  * Standards-Version: 4.5.0 (routine-update)
+  * debhelper-compat 12 (routine-update)
+  * autopkgtest: s/ADTTMP/AUTOPKGTEST_TMP/g (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Set upstream metadata fields: Archive, Bug-Database, Bug-Submit,
+    Repository, Repository-Browse.
+
+ -- Andreas Tille <tille@debian.org>  Fri, 15 May 2020 16:50:50 +0200
+
+r-cran-crayon (1.3.4-4) unstable; urgency=medium
+
+  * Restore versioned Build-Depends: dh-r (>= 20180527) which was kicked
+    by dh-update-R
+  * Rebuild for R 3.5 transition
+
+ -- Andreas Tille <tille@debian.org>  Thu, 31 May 2018 11:17:53 +0200
+
+r-cran-crayon (1.3.4-3) unstable; urgency=medium
+
+  * use variables defined in /usr/share/dh/r-cran.mk
+  * debhelper 11
+  * Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-
+    lists.debian.net>
+  * Point Vcs fields to salsa.debian.org
+  * dh-update-R to update Build-Depends
+  * Secure URI in watch file
+  * Architecture: all
+
+ -- Andreas Tille <tille@debian.org>  Sun, 27 May 2018 16:06:05 +0200
+
+r-cran-crayon (1.3.4-2) unstable; urgency=medium
+
+  [ Graham Inggs ]
+  * Add test Depends: r-cran-withr
+
+  [ Andreas Tille ]
+  * Add test Depends: r-cran-mockery
+    Closes: #882358
+
+ -- Andreas Tille <tille@debian.org>  Sat, 25 Nov 2017 16:51:39 +0100
+
+r-cran-crayon (1.3.4-1) unstable; urgency=medium
+
+  * New upstream version
+  * Moved packaging from SVN to Git
+  * debhelper 10
+  * Standards-Version: 4.1.1
+
+ -- Andreas Tille <tille@debian.org>  Thu, 12 Oct 2017 16:54:29 +0200
+
+r-cran-crayon (1.3.2-1) unstable; urgency=medium
+
+  * New upstream version
+  * Convert to dh-r
+  * Canonical homepage for CRAN
+
+ -- Andreas Tille <tille@debian.org>  Mon, 07 Nov 2016 19:39:54 +0100
+
+r-cran-crayon (1.3.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Sat, 31 Oct 2015 08:36:27 +0100
+
+r-cran-crayon (1.3.0-1) unstable; urgency=medium
+
+  * Initial upload (Closes: #791854)
+
+ -- Andreas Tille <tille@debian.org>  Sat, 09 May 2015 08:52:18 +0200

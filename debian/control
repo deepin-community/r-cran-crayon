@@ -1,0 +1,27 @@
+Source: r-cran-crayon
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-r,
+               r-base-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-crayon
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-crayon.git
+Homepage: https://cran.r-project.org/package=crayon
+Rules-Requires-Root: no
+
+Package: r-cran-crayon
+Architecture: all
+Depends: ${R:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R colored terminal output
+ Colored terminal output on terminals that support ANSI color and
+ highlight codes. ANSI color support is automatically detected. Colors
+ and highlighting can be combined and nested. New styles can also be
+ created easily. This package was inspired by the chalk JavaScript
+ project.

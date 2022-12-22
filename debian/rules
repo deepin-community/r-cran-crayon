@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+include /usr/share/dh-r/r-cran.mk
+
+%:
+	dh $@ --buildsystem R
+
+override_dh_install:
+	dh_install
+	rm -rf debian/$(package)/usr/lib/R/site-library/$(cranName)/LICENSE
